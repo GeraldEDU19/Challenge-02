@@ -3,10 +3,11 @@ class words{
     constructor(){
         this.wordsArray =[];
     }
-    static addWord(word){
+    addWord(word){
         this.wordsArray.push(word)
+        console.log("Def08---------------------------")
     }
-    static getWordsArray(){
+    getWordsArray(){
         return this.wordsArray;
     }
     
