@@ -9,8 +9,9 @@ html,body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     text-align: center;
+    margin-bottom:;
 }
 .Principal .Boton{
    margin: 5px;
