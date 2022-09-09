@@ -3,10 +3,10 @@ class words{
     constructor(){
         this.wordsArray =[];
     }
-    addWord(word){
+    static addWord(word){
         this.wordsArray.push(word)
     }
-    getWordsArray(){
+    static getWordsArray(){
         return this.wordsArray;
     }
     
@@ -14,9 +14,9 @@ class words{
 
 console.log("Hola")
 words = new words();
-words.addWord("Hola-------------")
-var prueba = words.getWordsArray
-console.log(prueba)
+words.addWord("Hola-------------");
+var prueba = words.getWordsArray();
+console.log(prueba);
 
 function refresh(){
     
