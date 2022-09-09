@@ -14,9 +14,9 @@ class words{
 
 
 words = new words();
+
 words.addWord("Hola-------------");
-var prueba = words.getWordsArray();
-console.log(prueba);
+console.log(words.getWordsArray());
 
 function refresh(){
     
