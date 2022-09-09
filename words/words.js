@@ -13,7 +13,7 @@ class words{
 }
 
 console.log("Hola")
-words = words();
+words = new words();
 words.addWord("Hola-------------")
 var prueba = words.getWordsArray()
 console.log(prueba)
