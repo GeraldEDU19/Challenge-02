@@ -15,7 +15,8 @@ class words{
 console.log("Hola")
 words = words();
 words.addWord("Hola-------------")
-console.log(words.getWordsArray)
+var prueba = words.getWordsArray()
+console.log(prueba)
 
 function refresh(){
     
