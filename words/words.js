@@ -1,7 +1,7 @@
 class words{
 
     constructor(){
-        this.wordsArray =[];
+        this.wordsArray =["HTML","CSS","JAVASCRIPT","SOFTWARE","WEB","JAVA","PYTHON"];
     }
     addWord(word){
         this.wordsArray.push(word);
