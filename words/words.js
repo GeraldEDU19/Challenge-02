@@ -4,8 +4,7 @@ class words{
         this.wordsArray =[];
     }
     addWord(word){
-        this.wordsArray.push(word)
-        console.log("Def08---------------------------")
+        this.wordsArray.push(word);
     }
     getWordsArray(){
         return this.wordsArray;
@@ -13,7 +12,7 @@ class words{
     
 }
 
-console.log("Hola")
+
 words = new words();
 words.addWord("Hola-------------");
 var prueba = words.getWordsArray();
