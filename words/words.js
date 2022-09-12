@@ -1,35 +1,33 @@
-class words{
+class words {
 
-    constructor(){
-        this.wordsArray =["HTML","CSS","JAVASCRIPT","SOFTWARE","WEB","JAVA","PYTHON"];
+    constructor() {
+        this.wordsArray = ["HTML", "CSS", "JAVASCRIPT", "SOFTWARE", "WEB", "JAVA", "PYTHON"];
     }
-    addWord(word){
+    addWord(word) {
         this.wordsArray.push(word);
     }
-    getWordsArray(){
+    getWordsArray() {
         return this.wordsArray;
     }
-    
+
 }
 
-console.log("----------------------------")
-words = new words();
-wordsArray = words.getWordsArray();
-
-const divWords = document.getElementById("words");
-
-for(let i = 0; i < wordsArray.length; i++){
-    console.log("Entró")
-    let p = document.createElement("p");
-    p.innerText = wordsArray[i];
-    divWords.appendChild(p);
-}
+refresh();
+console.log("Frescos");
 
 
 
-words.addWord("Hola-------------");
 
 
-function refresh(){
-    
+
+function refresh() {
+    const divWords = document.getElementById("words");
+    words = new words();
+    wordsArray = words.getWordsArray();
+    for (let i = 0; i < wordsArray.length; i++) {
+        console.log("Entró")
+        let p = document.createElement("p");
+        p.innerText = wordsArray[i];
+        divWords.appendChild(p);
+    }
 }
