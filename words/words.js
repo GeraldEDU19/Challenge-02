@@ -17,7 +17,9 @@ refresh();
 
 words.addWord("Hola");
 
-console.log("Prueba")
+console.log("Prueba");
+
+console.log(word.getWordsArray);
 
 refresh();
 
