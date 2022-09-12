@@ -29,8 +29,15 @@ refresh();
 
 function refresh() {
 
+    
+
     divWords = document.getElementById("words");
+    divWords.removeChild()
     wordsArray = words.getWordsArray();
+
+    while (divWords.firstChild) {
+        divWords.removeChild(divWords.firstChild)
+    }
 
     for (let i = 0; i < wordsArray.length; i++) {
         console.log("Entró")
