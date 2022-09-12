@@ -19,7 +19,7 @@ words.addWord("Hola");
 
 console.log("Prueba");
 
-console.log(word.getWordsArray);
+console.log(words.getWordsArray);
 
 refresh();
 
