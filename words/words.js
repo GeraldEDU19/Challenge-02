@@ -35,7 +35,7 @@ function refresh() {
     divWords.removeChild()
     wordsArray = words.getWordsArray();
 
-    while (divWords.firstChild) {
+    while (divWords.hasChildNodes) {
         divWords.removeChild(divWords.firstChild)
     }
 
