@@ -34,14 +34,14 @@ function refresh() {
 
     while (divWords.firstChild) {
         divWords.removeChild(divWords.firstChild);
-        console.log("Entró");
     }
 
     for (let i = 0; i < wordsArray.length; i++) {
-        console.log("Entró")
-        let p = document.createElement("p");
+
+        let p = document.createElement("li");
         p.innerText = wordsArray[i];
         divWords.appendChild(p);
+
     }
 
 }
