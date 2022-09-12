@@ -12,24 +12,29 @@ class words {
 
 }
 words = new words();
+let divWords = document.getElementById("words");
 refresh();
-console.log("Primero")
-refresh();
-console.log("Frescos");
 
+words.addWord("Hola");
+
+console.log("Prueba")
+
+refresh();
 
 
 
 
 
 function refresh() {
-    
-    let divWords = document.getElementById("words");
+
+    divWords = document.getElementById("words");
     wordsArray = words.getWordsArray();
+
     for (let i = 0; i < wordsArray.length; i++) {
         console.log("Entró")
         let p = document.createElement("p");
         p.innerText = wordsArray[i];
         divWords.appendChild(p);
     }
+
 }
