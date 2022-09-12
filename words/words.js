@@ -11,7 +11,7 @@ class words {
     }
 
 }
-
+words = new words();
 refresh();
 console.log("Primero")
 refresh();
@@ -23,8 +23,8 @@ console.log("Frescos");
 
 
 function refresh() {
+    
     let divWords = document.getElementById("words");
-    words = new words();
     wordsArray = words.getWordsArray();
     for (let i = 0; i < wordsArray.length; i++) {
         console.log("Entró")
