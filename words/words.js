@@ -11,8 +11,11 @@ class words{
     }
     
 }
+words = new words();
+wordsArray =  words.getWordsArray();
 
 const divWords = document.getElementById("words");
+
 for(let i = 0; i < wordsArray.length; i++){
     console.log("Entró")
     let p = document.createElement("p");
@@ -20,10 +23,10 @@ for(let i = 0; i < wordsArray.length; i++){
     divWords.appendChild(h1);
 }
 
-words = new words();
+
 
 words.addWord("Hola-------------");
-console.log(words.getWordsArray());
+
 
 function refresh(){
     
