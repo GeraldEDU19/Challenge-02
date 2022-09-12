@@ -12,7 +12,7 @@ class words{
     
 }
 
-console.log("lkjsdfljksdfjkl")
+console.log("----------------------------")
 words = new words();
 wordsArray = words.getWordsArray();
 
