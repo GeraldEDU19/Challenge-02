@@ -14,7 +14,7 @@ class words{
 
 console.log("lkjsdfljksdfjkl")
 words = new words();
-let wordsArray = words.getWordsArray();
+wordsArray = words.getWordsArray();
 
 const divWords = document.getElementById("words");
 
