@@ -43,7 +43,6 @@ function refresh() {
     
 
     divWords = document.getElementById("words");
-    divWords.removeChild();
     wordsArray = words.getWordsArray();
 
 
