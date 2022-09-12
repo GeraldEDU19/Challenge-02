@@ -13,6 +13,8 @@ class words {
 }
 
 refresh();
+console.log("Primero")
+refresh();
 console.log("Frescos");
 
 
