@@ -22,7 +22,7 @@ for(let i = 0; i < wordsArray.length; i++){
     console.log("Entró")
     let p = document.createElement("p");
     p.innerText = wordsArray[i];
-    divWords.appendChild(h1);
+    divWords.appendChild(p);
 }
 
 
