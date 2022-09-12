@@ -23,7 +23,7 @@ console.log("Frescos");
 
 
 function refresh() {
-    const divWords = document.getElementById("words");
+    let divWords = document.getElementById("words");
     words = new words();
     wordsArray = words.getWordsArray();
     for (let i = 0; i < wordsArray.length; i++) {
