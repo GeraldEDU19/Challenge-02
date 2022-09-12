@@ -37,6 +37,7 @@ function refresh() {
 
     while (divWords.hasChildNodes) {
         divWords.removeChild(divWords.firstChild)
+        console.log("Entró")
     }
 
     for (let i = 0; i < wordsArray.length; i++) {
