@@ -21,6 +21,7 @@ html,body{
    width: 200px;
    font-family: 'Combo', cursive;
    border-style: dotted;
+   font-weight: bold;
 }
 .Principal .Boton:hover{
  border-style: double;
