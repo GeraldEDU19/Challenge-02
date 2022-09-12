@@ -13,6 +13,7 @@ class words {
 }
 words = new words();
 let divWords = document.getElementById("words");
+console.log("Nueva versión");
 refresh();
 
 words.addWord("Hola");
@@ -32,12 +33,12 @@ function refresh() {
     
 
     divWords = document.getElementById("words");
-    divWords.removeChild()
+    divWords.removeChild();
     wordsArray = words.getWordsArray();
 
     while (divWords.hasChildNodes) {
-        divWords.removeChild(divWords.firstChild)
-        console.log("Entró")
+        divWords.removeChild(divWords.firstChild);
+        console.log("Entró");
     }
 
     for (let i = 0; i < wordsArray.length; i++) {
