@@ -11,28 +11,13 @@ class words {
     }
 
 }
+
 words = new words();
 let divWords = document.getElementById("words");
-console.log("Nueva versión-----------------");
-wordsArray = words.getWordsArray();
-
-for (let i = 0; i < wordsArray.length; i++) {
-    console.log("Entró")
-    let p = document.createElement("p");
-    p.innerText = wordsArray[i];
-    divWords.appendChild(p);
-}
-
 
 refresh();
 
-words.addWord("Hola");
-
-console.log("Prueba");
-
-console.log(words.getWordsArray);
-
-refresh();
+console.log("WORKS")
 
 
 
