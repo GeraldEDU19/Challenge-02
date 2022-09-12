@@ -12,6 +12,12 @@ class words{
     
 }
 
+const divWords = document.getElementById("words");
+for(let i = 0; i < wordsArray.length; i++){
+    let h1 = document.createElement('h1');
+    h1.innerText = wordsArray[i];
+    divWords.appendChild(h1);
+}
 
 words = new words();
 
