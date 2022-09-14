@@ -24,9 +24,9 @@ function refresh() {
 
     for (let i = 0; i < oWords.wordsArray.length; i++) {
 
-        let p = document.createElement("li");
-        p.innerText = oWords.wordsArray[i];
-        divWords.appendChild(p);
+        let li = document.createElement("li");
+        li.innerText = oWords.wordsArray[i];
+        divWords.appendChild(li);
 
     }
 
