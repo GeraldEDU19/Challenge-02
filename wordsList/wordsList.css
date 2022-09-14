@@ -1,3 +1,10 @@
+header{
+    background: url("../images/letters.webp");
+    opacity: 0.5;
+}
+nav{
+    opacity: 1;
+}
 textarea {
     resize: none;
 }
@@ -9,6 +16,7 @@ h2{
 .navigator li{
     list-style: none;
     display: inline;
+    
 }
 
 .navigator img{
