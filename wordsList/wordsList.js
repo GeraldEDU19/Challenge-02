@@ -1,13 +1,7 @@
-
-var divWords = document.getElementById("words");
-var wordsArray;
+import {words} from "../modules/words.js";
+import {refreshWords} from "../script.js"
 refresh();
 
-wordsList.addWord("Hola");
-
-refresh();
-
-console.log("WORKS")
 
 
 
@@ -15,10 +9,12 @@ console.log("WORKS")
 
 function refresh() {
 
-    
+    var divWords = document.getElementById("words");
+    //var oWords = new words();
 
-    divWords = document.getElementById("words");
-    wordsArray = wordsList.getWordsArray();
+    refreshWords();
+    var oWords = JSON.parse(localStorage.getItem("oWords"));
+    
 
 
 
@@ -26,10 +22,10 @@ function refresh() {
         divWords.removeChild(divWords.firstChild);
     }
 
-    for (let i = 0; i < wordsArray.length; i++) {
+    for (let i = 0; i < oWords.wordsArray.length; i++) {
 
         let p = document.createElement("li");
-        p.innerText = wordsArray[i];
+        p.innerText = oWords.wordsArray[i];
         divWords.appendChild(p);
 
     }
