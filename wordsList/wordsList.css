@@ -26,6 +26,7 @@ h2{
 main{
    display: block;
    justify-content: center;
+   text-align: center;
    
 }
 .words {
