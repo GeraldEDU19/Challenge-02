@@ -58,6 +58,9 @@ main{
     background-color: whitesmoke;
     padding: 5px;
 }
+.buttonAdd:hover{
+    background-color: lightgray;
+}
 
 @media(max-width: 800px){
     .words{
