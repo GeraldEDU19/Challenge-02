@@ -20,7 +20,7 @@ function refreshWords(){
 
 
 function refresh() {
-
+    console.log("entró");
     var divWords = document.getElementById("words");
     //var oWords = new words();
     console.log(refreshWords());
