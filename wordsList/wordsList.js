@@ -23,7 +23,7 @@ function refresh() {
 
     var divWords = document.getElementById("words");
     //var oWords = new words();
-
+    console.log(refreshWords());
     var oWords = refreshWords();
 
 
@@ -44,3 +44,4 @@ function refresh() {
 }
 
 
+0
