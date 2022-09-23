@@ -43,8 +43,12 @@ main{
 }
 
 .inputWord{
-    margin-left:300px;
+    margin-left: 175px;
     margin-bottom: 25px;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 5px;
+    font-family: 'Combo', cursive;
 }
 
 @media(max-width: 800px){
