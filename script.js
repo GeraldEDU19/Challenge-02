@@ -1,16 +1,17 @@
-import { words } from "./modules/words.js";
+refreshWords()
 
 
+function refreshWords(){
 
-
-export function refreshWords(){
-    var oWords = JSON.parse(localStorage.getItem("oWords"));
+    var wordsArray = JSON.parse(localStorage.getItem("wordsArray"));
     
-    if(oWords === null){
-       
-        oWords = new words()
-        localStorage.setItem("oWords",JSON.stringify(oWords));
+    if(wordsArray === null){
+        wordsArray = ["HTML", "CSS", "JAVASCRIPT", "SOFTWARE", "WEB", "JAVA", "PYTHON"];
+        localStorage.setItem("wordsArray",JSON.stringify(oWords));
         
     }
+
+    return wordsArray;
+    
 }
 

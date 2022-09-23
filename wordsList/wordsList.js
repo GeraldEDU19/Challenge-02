@@ -1,7 +1,19 @@
-import {words} from "../modules/words.js";
-import {refreshWords} from "../script.js"
-refresh();
+refresh()
 
+
+function refreshWords(){
+
+    var wordsArray = JSON.parse(localStorage.getItem("wordsArray"));
+    
+    if(wordsArray === null){
+        wordsArray = ["HTML", "CSS", "JAVASCRIPT", "SOFTWARE", "WEB", "JAVA", "PYTHON"];
+        localStorage.setItem("wordsArray",JSON.stringify(oWords));
+        
+    }
+
+    return wordsArray;
+    
+}
 
 
 
@@ -12,10 +24,7 @@ function refresh() {
     var divWords = document.getElementById("words");
     //var oWords = new words();
 
-    refreshWords();
-    var oWords = JSON.parse(localStorage.getItem("oWords"));
-    
-
+    var oWords = refreshWords();
 
 
     while (divWords.firstChild) {
