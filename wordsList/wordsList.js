@@ -7,7 +7,7 @@ function refreshWords(){
     
     if(wordsArray === null){
         wordsArray = ["HTML", "CSS", "JAVASCRIPT", "SOFTWARE", "WEB", "JAVA", "PYTHON"];
-        localStorage.setItem("wordsArray",JSON.stringify(oWords));
+        localStorage.setItem("wordsArray",JSON.stringify(wordsArray));
         
     }
 
