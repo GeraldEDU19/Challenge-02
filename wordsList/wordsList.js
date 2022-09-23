@@ -33,7 +33,7 @@ function refresh() {
 }
 
 function addWord(){
-    var word = document.getElementById("nputWord").value;
+    var word = document.getElementById("inputWord").value;
     var tempWords = JSON.parse(localStorage.getItem("wordsArray"));
     tempWords.push(word);
     wordsArray = tempWords;
