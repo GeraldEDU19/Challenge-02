@@ -1,9 +1,6 @@
-refresh()
+var wordsArray;
 
-
-function refreshWords(){
-
-    var wordsArray = JSON.parse(localStorage.getItem("wordsArray"));
+    wordsArray = JSON.parse(localStorage.getItem("wordsArray"));
     
     if(wordsArray === null){
         wordsArray = ["HTML", "CSS", "JAVASCRIPT", "SOFTWARE", "WEB", "JAVA", "PYTHON"];
@@ -11,36 +8,37 @@ function refreshWords(){
         
     }
 
-    return wordsArray;
     
-}
+
+    refresh();
 
 
 
 
 
 function refresh() {
-    console.log("entró");
+
+    var words = wordsArray;
     var divWords = document.getElementById("words");
-    //var oWords = new words();
-    console.log(refreshWords());
-    var oWords = refreshWords();
-
-
     while (divWords.firstChild) {
         divWords.removeChild(divWords.firstChild);
     }
-
-    for (let i = 0; i < oWords.length; i++) {
+    for (let i = 0; i < words.length; i++) {
 
         let li = document.createElement("li");
-        li.innerText = oWords[i];
+        li.innerText = words[i];
         divWords.appendChild(li);
 
     }
+}
 
-   
-
+function addWord(){
+    var word = document.getElementById("nputWord").value;
+    var tempWords = JSON.parse(localStorage.getItem("wordsArray"));
+    tempWords.push(word);
+    wordsArray = tempWords;
+    localStorage.setItem("wordsArray",JSON.stringify(wordsArray));
+    refresh();
 }
 
 
