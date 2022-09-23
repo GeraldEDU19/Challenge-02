@@ -31,10 +31,10 @@ function refresh() {
         divWords.removeChild(divWords.firstChild);
     }
 
-    for (let i = 0; i < oWords.wordsArray.length; i++) {
+    for (let i = 0; i < oWords.length; i++) {
 
         let li = document.createElement("li");
-        li.innerText = oWords.wordsArray[i];
+        li.innerText = oWords[i];
         divWords.appendChild(li);
 
     }
