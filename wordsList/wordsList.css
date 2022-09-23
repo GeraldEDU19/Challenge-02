@@ -44,12 +44,17 @@ main{
 }
 
 .inputWord{
-    margin-left: 175px;
     margin-bottom: 25px;
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 25px;
     padding: 5px;
     font-family: 'Combo', cursive;
+}
+.buttonAdd{
+    font-family: 'Combo', cursive;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 @media(max-width: 800px){
